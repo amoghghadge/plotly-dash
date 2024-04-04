@@ -14,6 +14,7 @@ df.head(10)                                                               # disp
 stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]  # load the CSS stylesheet
 
 app = Dash(__name__, external_stylesheets=stylesheets)  # initialize the app
+server = app.server
 
 app.layout = html.Div(
     [
