@@ -54,4 +54,4 @@ def update_graph(selected_countries, selected_year_range):
     return fig
 
 if __name__ == "__main__":
-    app.run_server(jupyter_mode="tab", debug=True)      # run the app
+    app.run_server(debug=True)      # run the app
