@@ -18,7 +18,7 @@ server = app.server
 
 app.layout = html.Div(
     [
-        html.H1("Interactive Gapminder GDP Per Capita Graph"),  # app title at top of page
+        html.H1("Emissions Data Across Countries over Time"),  # app title at top of page
         html.Div(
             children=[
                 html.Div(
