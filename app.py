@@ -2,14 +2,12 @@ import pandas as pd                 # needed to read in data into dataframes and
 import plotly.express as px         # needed to create line graph
 from dash import Dash, dcc, html, Input, Output, callback    # needed to create ui components
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv('data/clean_data.csv')
 # drop the first column
 df = df.drop(df.columns[0], axis=1)
 
 min_year = df['Year'].min()
 max_year = df['Year'].max()
-
-df.head(10)                                                               # display first few rows of dataframe to confirm it is cleaned properly
 
 stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]  # load the CSS stylesheet
 
